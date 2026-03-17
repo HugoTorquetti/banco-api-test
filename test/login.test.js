@@ -1,11 +1,12 @@
 const request = require('supertest');
 const { expect } = require('chai');
+require('dotenv').config();
 
 describe('Login', () => {
     describe('POST /login', () => {
         it('Deve retornar 200 com token em sting usando credenciais válidas', async () => {
             /*Requisição para a API*/
-            const resposta = await request('http://localhost:3000')
+            const resposta = await request(process.env.BASE_URL)
                 .post('/login') /*método e url*/
                 .set('Content-Type', 'application/json') /*Definição do cabeçalho como json*/
                 /*envio de credenciais válidas*/
