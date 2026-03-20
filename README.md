@@ -22,7 +22,7 @@ Os testes cobrem operações como autenticação, transferências e demais endpo
 ---
 
 ## 📂 Estrutura do projeto
-
+```bash
 banco-api-test/
 │
 ├── fixtures/                     # Massa de dados para os testes
@@ -42,7 +42,7 @@ banco-api-test/
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-
+```
 ---
 
 ## ⚙️ Configuração do ambiente
